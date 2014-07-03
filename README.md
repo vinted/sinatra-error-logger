@@ -1,4 +1,4 @@
-# Sinatra::Error::Logger
+# Sinatra::ErrorLogger
 
 TODO: Write a gem description
 

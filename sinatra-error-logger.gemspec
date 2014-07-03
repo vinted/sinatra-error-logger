@@ -1,11 +1,11 @@
 # coding: utf-8
 lib = File.expand_path('../lib', __FILE__)
 $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
-require 'sinatra/error/logger/version'
+require 'sinatra/error_logger/version'
 
 Gem::Specification.new do |spec|
   spec.name          = "sinatra-error-logger"
-  spec.version       = Sinatra::Error::Logger::VERSION
+  spec.version       = Sinatra::ErrorLogger::VERSION
   spec.authors       = ["Tomas Brazys"]
   spec.email         = ["tomas.brazys@gmail.com"]
   spec.summary       = %q{TODO: Write a short summary. Required.}
