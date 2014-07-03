@@ -1,14 +1,9 @@
 module Sinatra
-  class ErrorLogger
+  class ErrorLogger < Struct.new(:app, :logger)
     VERSION = "0.0.1"
 
-    def initialize(app, logger)
-      @app = app
-      @logger = logger
-    end
-
     def call(env)
-      status, headers, body = @app.call(env)
+      status, headers, body = app.call(env)
       log_error(env)
       [status, headers, body]
     end
@@ -17,7 +12,7 @@ module Sinatra
       exception = env['sinatra.error']
       return unless exception
 
-      @logger.error(format_message(exception, env))
+      logger.error(format_message(exception, env))
     end
 
     def format_message(exception, env)
