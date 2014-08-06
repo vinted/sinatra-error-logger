@@ -1,6 +1,8 @@
 # Sinatra::ErrorLogger
 
-TODO: Write a gem description
+[![Build Status](https://travis-ci.org/vinted/sinatra-error-logger.svg)](https://travis-ci.org/vinted/sinatra-error-logger)
+
+Logs errors from Sinatra app to specified logger.
 
 ## Installation
 
@@ -18,12 +20,12 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+Configure your logger first and add `use Sinatra::ErrorLogger, logger` to your Sinatra webapp.
 
 ## Contributing
 
-1. Fork it ( https://github.com/[my-github-username]/sinatra-error-logger/fork )
-2. Create your feature branch (`git checkout -b my-new-feature`)
+1. Fork it ( https://github.com/vinted/sinatra-error-logger/fork )
+2. Create your feature branch (`git checkout -b features/my-new-feature`)
 3. Commit your changes (`git commit -am 'Add some feature'`)
-4. Push to the branch (`git push origin my-new-feature`)
+4. Push to the branch (`git push origin features/my-new-feature`)
 5. Create a new Pull Request
